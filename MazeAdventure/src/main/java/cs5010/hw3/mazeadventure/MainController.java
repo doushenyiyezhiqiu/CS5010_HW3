@@ -9,9 +9,6 @@ public class MainController {
 
     @FXML
     private void initialize() {
-        System.out.println(Player.getName());
-        System.out.println(Player.printItems());
-
         infoLabel.setText("Player Name: " + Player.getName() + "\n" +
                           "Items: " + Player.printItems());
 

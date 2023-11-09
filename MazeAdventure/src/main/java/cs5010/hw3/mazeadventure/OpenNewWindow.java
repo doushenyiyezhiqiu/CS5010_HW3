@@ -19,6 +19,9 @@ public class OpenNewWindow {
         Scene scene = new Scene(root);
         stage.setScene(scene);
 
+        Image image = new Image(OpenNewWindow.class.getResourceAsStream("Images/zelda-icon.jpg"));
+        stage.getIcons().add(image);
+
         stage.setResizable(false);
 
         stage.show();
