@@ -4,27 +4,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
-    private String name;
-    private List<String> items;
+    private static String name;
+    private static List<String> items;
 
-    public Player(String name) {
-        this.name = name;
-        this.items = new ArrayList<>();
+    public Player(String input) {
+        name = input;
+        items = new ArrayList<>();
     }
 
-    public String getName() {
+    public static String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public static void setName(String input) {
+        name = input;
     }
 
-    public List<String> getItems() {
+    public static List<String> getItems() {
         return items;
     }
 
-    public void setItems(List<String> items) {
-        this.items = items;
+    public static void setItems(List<String> itemList) {
+        items = itemList;
     }
 }
