@@ -21,6 +21,18 @@ public class MainController {
     private TextField goToYText;
 
     @FXML
+    private Button addItemButton;
+
+    @FXML
+    private TextField itemNameText;
+
+    @FXML
+    private TextField itemXText;
+
+    @FXML
+    private TextField itemYText;
+
+    @FXML
     private void initialize() {
         infoLabel.setText("Player Name: " + Player.getName() + "\n" +
                           "Items: " + Player.printItems());
@@ -42,5 +54,11 @@ public class MainController {
                 "Items: " + Player.printItems());
     }
 
+    @FXML
+    private void handleAddItemButtonClick() {
+        String name = itemNameText.getText(), x = itemXText.getText();
+        int y = Integer.parseInt(itemYText.getText());
+        MapOfTheEagle.addItem(name, new Pair<>(x, y));
+    }
 
 }
