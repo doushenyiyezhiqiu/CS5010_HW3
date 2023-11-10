@@ -8,6 +8,17 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * This is the main application class.
+ * Before running the whole application, we will initially add 6 items into the map.
+ * "Key": C5.
+ * "Compass": D4.
+ * "Bow": B2.
+ * "Old Man": C1.
+ * "Boss": B5.
+ * "Triforce Piece": B6.
+ * "Map": C3.
+ */
 public class MainApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
