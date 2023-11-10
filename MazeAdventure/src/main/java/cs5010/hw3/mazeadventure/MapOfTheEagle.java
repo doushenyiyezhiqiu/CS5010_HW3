@@ -3,6 +3,10 @@ package cs5010.hw3.mazeadventure;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * This class is where we store the map of Dungeon one -- "The Eagle", we will use the string BST as our inventory of items.
+ * We also use HashMap to store the position of items as our a real map.
+ */
 public class MapOfTheEagle {
     private static StringBinarySearchTree itemsInventory = new StringBinarySearchTree();
     private static Map<String, Pair<String, Integer>> itemToPosition = new HashMap<>();
@@ -35,7 +39,15 @@ public class MapOfTheEagle {
     }
 
     public static void addItem(String item, Pair<String, Integer> pos) {
-        if (!itemsInventory.exists(item)) {
+        // To check if the position is filled
+        boolean flag = true;
+        for (Map.Entry<String, Pair<String, Integer>> entry : itemToPosition.entrySet()) {
+            if (entry.getValue().getValue().equals(pos.getValue()) && entry.getValue().getKey().equals(pos.getKey())) {
+                flag = false;
+                break;
+            }
+        }
+        if (!itemsInventory.exists(item) && flag) {
             itemsInventory.insert(item);
             itemToPosition.put(item, pos);
         }

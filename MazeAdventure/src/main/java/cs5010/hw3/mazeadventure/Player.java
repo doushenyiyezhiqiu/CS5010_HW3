@@ -3,6 +3,9 @@ package cs5010.hw3.mazeadventure;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is the class we design to store the player's information.
+ */
 public class Player {
     private static String name = "";
     private static List<String> items = new ArrayList<>();

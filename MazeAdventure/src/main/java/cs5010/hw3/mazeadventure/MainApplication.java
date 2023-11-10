@@ -42,5 +42,11 @@ public class MainApplication extends Application {
         MapOfTheEagle.getItemsInventory().insert("Compass");
         MapOfTheEagle.getItemToPosition().put("Compass", new Pair<>("D", 4));
 
+        MapOfTheEagle.getItemsInventory().insert("Boss");
+        MapOfTheEagle.getItemToPosition().put("Boss", new Pair<>("B", 5));
+
+        MapOfTheEagle.getItemsInventory().insert("Old Man");
+        MapOfTheEagle.getItemToPosition().put("Old Man", new Pair<>("C", 1));
+
     }
 }

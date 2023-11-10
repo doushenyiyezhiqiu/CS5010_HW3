@@ -1,5 +1,8 @@
 package cs5010.hw3.mazeadventure;
 
+/**
+ * The class is a tree node class.
+ */
 public class TreeNode {
     String value;
     TreeNode left;

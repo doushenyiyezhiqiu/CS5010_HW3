@@ -7,6 +7,9 @@ import javafx.scene.control.TextField;
 
 import java.util.Map;
 
+/**
+ * This is the controller class for "main-page.fxml".
+ */
 public class MainController {
     @FXML
     private Label infoLabel;

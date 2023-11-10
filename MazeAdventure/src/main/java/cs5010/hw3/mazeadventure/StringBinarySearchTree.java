@@ -1,5 +1,8 @@
 package cs5010.hw3.mazeadventure;
 
+/**
+ * This is a binary search tree used for storing string.
+ */
 public class StringBinarySearchTree {
     TreeNode root;
 
